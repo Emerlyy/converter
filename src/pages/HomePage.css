@@ -1,0 +1,10 @@
+.home-page-container {
+    background: #fafafa;
+    min-height: 100%;
+}
+
+.home-page-wrapper {
+    padding-top: 100px;
+    display: grid;
+    place-items: center;
+}

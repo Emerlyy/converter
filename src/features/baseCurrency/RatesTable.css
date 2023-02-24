@@ -1,0 +1,22 @@
+.rates-table {
+    text-align: left;
+    border-collapse: collapse;
+    background: #f8f8f8;
+}
+
+.rates-table-curr {
+    width: 20px;
+    font-weight: bold;
+    padding: 3px 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.rates-table-rate {
+    text-align: right;
+    padding: 3px 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.rates-table-head th {
+    padding-bottom: 10px;
+}

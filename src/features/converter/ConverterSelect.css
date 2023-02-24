@@ -1,0 +1,49 @@
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type='number'],
+input[type="number"]:hover,
+input[type="number"]:focus {
+    appearance: none;
+    -moz-appearance: textfield;
+}
+
+.converter-select {
+    display: flex;
+    border: 1px solid #dadce0;
+    padding: 1px;
+    border-radius: 6px;
+    position: relative;
+    width: 360px;
+    height: 60px;
+}
+
+.converter-select-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.converter-input {
+    position: relative;
+    outline: 0;
+    background-color: #fff;
+    margin: 0;
+    text-align: left;
+    padding: 10px 6px 10px 12px;
+    border: 0;
+    height: 40px;
+    width: 120px;
+    color: #4d5156;
+    font-size: 1.5rem;
+}
+
+.divider {
+    border-left: 1px solid #dadce0;
+    background-color: red;
+    position: absolute;
+    top: 8px;
+    bottom: 8px;
+    z-index: 3;
+}

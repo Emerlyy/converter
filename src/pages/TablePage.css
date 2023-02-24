@@ -1,0 +1,21 @@
+.table-page {
+    background: #fafafa;
+    min-height: 100%;
+}
+
+.table-page-wrapper {
+    padding: 80px 100px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(max-content, 400px));
+    column-gap: 60px;
+    align-items: top;
+}
+
+@media (max-width:800px) {
+    .table-page-wrapper {
+        grid-template-columns: 1fr;
+        padding: 40px 20px;
+        row-gap: 30px;
+        text-align: center;
+    }
+}

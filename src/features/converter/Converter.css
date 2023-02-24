@@ -1,0 +1,35 @@
+.converter {
+    border: 1px solid #dadce0;
+    border-radius: 4px;
+    padding: 20px;
+    width: fit-content;
+}
+
+.converter-title {
+    margin: 0 0 30px 0;
+    font-size: 2rem;
+}
+
+.converter-main {
+    display: flex;
+    column-gap: 50px;
+    align-items: center;
+}
+
+.arrow-icon{
+    font-size: 3rem;
+    transition: all .3s;
+}
+
+@media(max-width: 1000px) {
+    .converter{
+        text-align: center;
+    }
+    .converter-main {
+        flex-direction: column;
+        row-gap: 30px;
+    }
+    .arrow-icon{
+        transform: rotate(90deg);
+    }
+}

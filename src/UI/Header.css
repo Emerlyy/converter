@@ -1,0 +1,31 @@
+.header {
+    display: flex;
+    padding: 10px 50px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #212121;
+}
+
+.logo {
+    font-size: 1.5rem;
+    color: #212121;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.header-list {
+    display: flex;
+    column-gap: 100px;
+    font-size: 1.4rem;
+    list-style-type: none;
+}
+
+.header-list li a {
+    text-decoration: none;
+    color: #212121;
+    transition: color .1s;
+}
+
+.header-list li a:hover {
+    color: #bbb;
+}
