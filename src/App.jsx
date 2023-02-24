@@ -16,10 +16,10 @@ function App() {
   }, [dispatch]);
 
   return (
-    <>
+    <div className='main'>
       <Header />
       <Outlet />
-    </>
+    </div>
   );
 }
 

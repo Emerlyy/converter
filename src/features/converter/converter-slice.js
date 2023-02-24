@@ -46,6 +46,7 @@ const converterSlice = createSlice({
     setInitialCurrencyValue: (state, action) => { state.initialCurrency.value = action.payload },
     setQuoteCurrencyCode: (state, action) => { state.quoteCurrency.code = action.payload },
     setQuoteCurrencyValue: (state, action) => { state.quoteCurrency.value = action.payload },
+    changeCurrencies: (state) => { [state.initialCurrency, state.quoteCurrency] = [state.quoteCurrency, state.initialCurrency] }
   },
   extraReducers: (builder) => {
     builder
@@ -72,7 +73,8 @@ export const {
   setInitialCurrencyCode,
   setQuoteCurrencyCode,
   setInitialCurrencyValue,
-  setQuoteCurrencyValue
+  setQuoteCurrencyValue,
+  changeCurrencies
 } = converterSlice.actions;
 
 export const selectInitialCurrency = (state) => state.converter.initialCurrency;

@@ -1,6 +1,6 @@
 .home-page-container {
     background: #fafafa;
-    min-height: 100vh;
+    flex-grow: 1;
     padding: 50px 30px 50px;
 }
 

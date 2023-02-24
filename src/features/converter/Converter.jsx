@@ -1,8 +1,8 @@
 import { useDispatch, useSelector } from "react-redux";
 import ConverterSelect from "./ConverterSelect"
-import { convertValues, selectInitialCurrency, selectQuoteCurrency, setInitialCurrencyCode, setInitialCurrencyValue, setQuoteCurrencyCode, setQuoteCurrencyValue } from "./converter-slice";
+import { changeCurrencies, convertValues, selectInitialCurrency, selectQuoteCurrency, setInitialCurrencyCode, setInitialCurrencyValue, setQuoteCurrencyCode, setQuoteCurrencyValue } from "./converter-slice";
 import { useEffect } from "react";
-import { BsArrowRight } from 'react-icons/bs';
+import { FaExchangeAlt } from 'react-icons/fa';
 import './Converter.css';
 
 const Converter = () => {
@@ -48,7 +48,7 @@ const Converter = () => {
       <h2 className="converter-title">Converter</h2>
       <div className="converter-main">
         <ConverterSelect currCode={initialCode} currValue={initialValue} handleSelect={handleInitialSelect} handleChange={handleInitialChange} />
-        <BsArrowRight className="arrow-icon" />
+        <FaExchangeAlt onClick={() => dispatch(changeCurrencies())} className="arrow-icon" />
         <ConverterSelect currCode={quoteCode} currValue={quoteValue} handleSelect={handleQuoteSelect} handleChange={handleQuoteChange} />
       </div>
     </div>
