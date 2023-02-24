@@ -2,7 +2,7 @@
     border: 1px solid #dadce0;
     border-radius: 4px;
     padding: 20px;
-    width: fit-content;
+
 }
 
 .converter-title {
@@ -16,20 +16,25 @@
     align-items: center;
 }
 
-.arrow-icon{
+.arrow-icon {
     font-size: 3rem;
     transition: all .3s;
 }
 
 @media(max-width: 1000px) {
-    .converter{
+    .converter {
+        width: 100%;
         text-align: center;
+        padding-left: 10px;
+        padding-right: 10px;
     }
+
     .converter-main {
         flex-direction: column;
-        row-gap: 30px;
+        row-gap: 20px;
     }
-    .arrow-icon{
+
+    .arrow-icon {
         transform: rotate(90deg);
     }
 }

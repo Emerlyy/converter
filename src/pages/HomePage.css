@@ -1,10 +1,16 @@
 .home-page-container {
     background: #fafafa;
-    min-height: 100%;
+    min-height: 100vh;
+    padding: 50px 30px 50px;
 }
 
 .home-page-wrapper {
-    padding-top: 100px;
     display: grid;
     place-items: center;
+}
+
+@media (max-width:500px) {
+    .home-page-container{
+        padding: 50px 8px 40px;
+    }
 }

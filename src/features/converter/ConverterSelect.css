@@ -33,10 +33,10 @@ input[type="number"]:focus {
     text-align: left;
     padding: 10px 6px 10px 12px;
     border: 0;
-    height: 40px;
     width: 120px;
     color: #4d5156;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    vertical-align: center;
 }
 
 .divider {
@@ -46,4 +46,31 @@ input[type="number"]:focus {
     top: 8px;
     bottom: 8px;
     z-index: 3;
+}
+
+
+@media (max-width: 500px) {
+    .converter-select {
+        width: 100%;
+        flex-direction: column-reverse;
+        height: auto;
+    }
+
+    .converter-select-wrapper {
+        border-bottom: 1px solid #dadce0;
+        height: 60px;
+    }
+
+    .divider {
+        display: none;
+    }
+
+    .converter-input {
+        text-align: right;
+        padding: 10px 20px;
+        box-sizing: border-box;
+        width: 100%;
+        height: auto;
+  
+    }
 }
