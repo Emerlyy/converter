@@ -17,8 +17,13 @@
 }
 
 .arrow-icon {
+    cursor:pointer;
     font-size: 2rem;
     transition: all .3s;
+}
+
+.arrow-icon:hover{
+    color:gray;
 }
 
 @media(max-width: 1000px) {
