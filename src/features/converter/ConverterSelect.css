@@ -67,10 +67,9 @@ input[type="number"]:focus {
 
     .converter-input {
         text-align: right;
-        padding: 10px 20px;
+        padding: 20px 20px;
         box-sizing: border-box;
         width: 100%;
         height: auto;
-  
     }
 }
